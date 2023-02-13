@@ -89,7 +89,7 @@
                 </div>
             </div>
             <div class="split hide-mobile">
-                <a href="https://cdn.altv.mp/launcher/release/x64_win32/altv.zip" class="btn btn-client">
+                <a href="https://cdn.alt-mp.com/launcher/release/x64_win32/altv.zip" class="btn btn-client">
                     Download Client
                 </a>
                 <a href="#" @click="tryBundleServe" :disabled="isBundling" class="btn btn-server">
@@ -187,7 +187,7 @@ export default {
             this.options.include = [];
 
             const res = await axios.get(
-                `https://cdn.altv.mp/server/${this.options.branch}/${this.options.arch}/update.json`
+                `https://cdn.alt-mp.com/server/${this.options.branch}/${this.options.arch}/update.json`
             );
             this.version = res.data.version;
         },
